@@ -20,7 +20,7 @@ export default function BlogsPage() {
           <Card key={post.id} className="flex flex-col border-border hover:border-primary/50 transition-all duration-300">
             <CardHeader className="space-y-4 flex-grow">
               <div className="flex items-center justify-between">
-                <Badge variant="outline" className={post.type === "Trip" ? "border-blue-500/50 text-blue-500" : "border-primary/50 text-primary"}>
+                <Badge variant="outline" className="border-primary/50 text-primary">
                   {post.type}
                 </Badge>
                 <span className="text-xs text-muted-foreground">{post.date}</span>

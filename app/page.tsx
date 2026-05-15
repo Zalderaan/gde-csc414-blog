@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function Home() {
-  const featuredPosts = blogPosts.slice(0, 2);
+  const featuredPosts = blogPosts.filter(post => post.featured).slice(0, 2);
 
   return (
     <div className="space-y-24">
