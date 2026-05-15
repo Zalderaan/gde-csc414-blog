@@ -7,17 +7,22 @@ export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto space-y-16">
       <section className="flex flex-col md:flex-row gap-12 items-center">
-        <div className="relative w-64 h-64 shrink-0 rounded-2xl overflow-hidden border-2 border-primary/20 bg-muted">
-           <div className="absolute inset-0 flex items-center justify-center bg-primary/5">
-             <User className="w-20 h-20 text-primary/40" />
-           </div>
-           {/* Replace with actual image when available */}
-           <Image 
-            src="/about_profile.png" 
+        <div className="group relative w-64 h-64 shrink-0 rounded-2xl overflow-hidden border-2 border-primary/20 bg-muted">
+          <div className="absolute inset-0 flex items-center justify-center bg-primary/5">
+            <User className="w-20 h-20 text-primary/40" />
+          </div>
+          <Image
+            src="/pics/about_profile.png"
             alt="Godfrey Eclarinal"
             fill
-            className="object-cover opacity-90 hover:opacity-100 transition-opacity"
-           />
+            className="object-cover opacity-90 group-hover:opacity-0 transition-opacity duration-500"
+          />
+          <Image
+            src="/pics/profile_pic.png"
+            alt="Godfrey Eclarinal Hover"
+            fill
+            className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          />
         </div>
         <div className="space-y-6 flex-1">
           <div className="space-y-2">
@@ -53,13 +58,13 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-y-4 text-sm">
               <span className="text-muted-foreground">Course Code</span>
               <span className="font-medium">CSC414</span>
-              
+
               <span className="text-muted-foreground">Course Name</span>
               <span className="font-medium">CS Seminars & Educational Trips</span>
-              
+
               <span className="text-muted-foreground">Academic Year</span>
               <span className="font-medium">2025-2026</span>
-              
+
               <span className="text-muted-foreground">Department</span>
               <span className="font-medium">CCS</span>
             </div>
@@ -77,13 +82,13 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-y-4 text-sm">
               <span className="text-muted-foreground">Name</span>
               <span className="font-medium">Godfrey Eclarinal</span>
-              
+
               <span className="text-muted-foreground">Program</span>
               <span className="font-medium">BS Computer Science</span>
-              
+
               <span className="text-muted-foreground">Section</span>
               <span className="font-medium">BSCS 4A</span>
-              
+
               <span className="text-muted-foreground">Status</span>
               <Badge className="w-fit">Active</Badge>
             </div>

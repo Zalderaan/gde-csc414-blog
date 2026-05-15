@@ -15,9 +15,9 @@ export default function BlogsPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="columns-1 md:columns-2 lg:columns-3 gap-8">
         {blogPosts.map((post) => (
-          <Card key={post.id} className="flex flex-col h-full border-border hover:border-primary/50 transition-all duration-300 overflow-hidden">
+          <Card key={post.id} className="break-inside-avoid mb-8 flex flex-col border-border hover:border-primary/50 transition-all duration-300 overflow-hidden">
             {post.coverImage && (
               <div className="relative w-full h-48 border-b border-border bg-muted/30">
                 {/* eslint-disable-next-line @next/next/no-img-element */}

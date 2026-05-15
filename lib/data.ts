@@ -74,6 +74,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "For future TECHFEST events, conducting earlier technical dry runs and participant interest assessments could help organizers better prepare activities and estimate engagement levels. Establishing backup systems and alternative event flows ahead of time may also reduce the pressure caused by sudden technical difficulties.\n\nAdditionally, stronger marketing and orientation efforts for specialized competitions such as CTFs could help participants better understand the activity and encourage more involvement. Overall, the event was still a meaningful and rewarding experience that highlighted the value of resilience, adaptability, and teamwork in organizing large-scale academic activities."
     },
     gallery: [],
+    coverImage: "/techfest/techfest-pic.jpg",
     featured: true
   },
   {
@@ -98,6 +99,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "One area for improvement would be addressing the participant limit in online meeting platforms such as Google Meet. Some organizations resolve this by mirroring or streaming the meeting into another session to accommodate more attendees. Although it might require additional setup and coordination, implementing a similar system could help us reach a wider audience in future events. Overall, the experience was both fulfilling and educational—for our team as organizers and for the participants who joined to learn more about cybersecurity."
     },
     gallery: [],
+    coverImage: "/group_seminar/hackerj.png",
     featured: true
   },
   {
@@ -119,6 +121,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "For future industry visits, including live demonstrations of network monitoring or troubleshooting procedures could make the experience even more interactive. Providing brief informational materials or technical summaries after the visit may also help students review and retain the concepts discussed.\n\nOverall, the activity was a meaningful learning experience that broadened my perspective on telecommunications infrastructure and its role in supporting modern digital systems."
     },
     gallery: [],
+    coverImage: "/visits/industry_visit.jpg",
     featured: false
   },
   {
@@ -143,6 +146,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "One suggestion for future sessions would be to include a short hands-on coding segment where participants can try implementing a few design patterns live. This would help reinforce understanding and make the learning experience more interactive."
     },
     gallery: [],
+    coverImage: "/group_seminar/ts-patterns.png",
     featured: false
   },
   {
@@ -167,6 +171,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "For future webinars, incorporating short demonstrations of Agile workflows or QA testing tools could make the session more interactive and practical. Additionally, allocating more time for participant questions and discussions may encourage deeper engagement with the topic.\n\nOverall, the webinar was a valuable experience that highlighted the importance of collaboration, organization, and quality assurance in creating impactful software products."
     },
     gallery: [],
+    coverImage: "/group_seminar/agile.png",
     featured: false
   },
   {
@@ -190,6 +195,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "This seminar highlighted areas we can strengthen as organizers:\n- Prepare equipment earlier to avoid last-minute scrambling—secure a working projector, cables, and backup plans.\n- Coordinate with faculty sooner so audience-gathering becomes smoother and more organized.\n- Assign fixed roles ahead of time to minimize confusion once the event starts.\n- Conduct a dry run to ensure flow, timing, and setup are all ready before the actual day.\n\nDespite the rough start, the experience was valuable. It taught us how unpredictable F2F events can be and how critical proactive planning is. More importantly, it proved that with teamwork, resourcefulness, and determination, even a stressful beginning can still lead to a fulfilling and meaningful learning event."
     },
     gallery: [],
+    coverImage: "/group_seminar/ate_robina.jpg",
     featured: false
   },
   {
@@ -214,6 +220,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "If possible, future iterations of the event could include a short post-contest debrief or problem discussion session. This would help participants understand alternative solutions and learn directly from the test cases they missed. Overall, it was an enriching experience that motivated me to keep improving and growing as a developer."
     },
     gallery: [],
+    coverImage: "/conferences/raite.jpg",
     featured: false
   },
   {
@@ -236,6 +243,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "Future conferences could allocate additional time for discussions or networking sessions between presenters and attendees. This would allow participants to explore research ideas more deeply and potentially create opportunities for collaboration among institutions.\n\nOverall, participating in this conference as a paper presenter was a valuable milestone in my academic journey. It allowed me to share our research with a wider audience, gain constructive feedback, and experience the collaborative spirit of the research community."
     },
     gallery: [],
+    coverImage: "/conferences/ircite.jpg",
     featured: false
   },
   {
@@ -257,6 +265,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "For future activities, it would be helpful to include interactive scenarios or role-playing exercises that demonstrate how scams and cybercrimes unfold in real life. This hands-on approach could make the lessons more engaging and memorable. Additionally, distributing informational handouts or guides on cyber safety practices would provide participants with practical references they can use beyond the seminar."
     },
     gallery: [],
+    coverImage: "/webinars/cybsec.jpg",
     featured: false
   },
   {
@@ -279,6 +288,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "For future conferences, incorporating breakout sessions or small-group workshops could enhance participant engagement and provide hands-on experience with cybersecurity tools and practices. It would also be beneficial to distribute digital resources or follow-up materials summarizing the key points from each speaker, allowing attendees to revisit and apply the lessons in greater depth. Overall, the event was an excellent opportunity to learn from experts and reflect on our shared role in creating a safer digital world."
     },
     gallery: [],
+    coverImage: "/seminars/cybcon.jpg",
     featured: false
   },
   {
@@ -303,6 +313,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "For future runs, allowing a slightly longer coding period or a short pre-planning session could help participants implement more refined solutions. Overall, it was a memorable and growth-filled experience that blended innovation, teamwork, and fun."
     },
     gallery: [],
+    coverImage: "/seminars/winner.jpg",
     featured: true
   },
   {
@@ -325,6 +336,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "If possible, future workshops could include:\n- longer hands-on sessions to let participants explore more of Verse8’s advanced features,\n- sample projects or templates we can download for continued learning, and\n- short breakout segments where small groups can brainstorm and build mini-games collaboratively.\n\nOverall, the event was an enriching experience—both fun and educational—and helped expand my perspective on how AI will continue transforming the way we build games."
     },
     gallery: [],
+    coverImage: "/seminars/verse8.jpg",
     featured: false
   },
   {
@@ -346,6 +358,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "One suggestion for future activities would be to include more interactive elements, such as short hands-on demonstrations or practical coding exercises related to AI. This could help participants better connect theory to practice. Additionally, providing supplementary resources or follow-up materials would allow participants to continue learning about AI beyond the session."
     },
     gallery: [],
+    coverImage: "/webinars/hrcode.jpg",
     featured: false
   },
   {
@@ -368,6 +381,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "For future activities, it would be beneficial to include demonstrations of how live streaming setups work, such as showcasing the process from signal capture to online broadcast. This would help participants better visualize the concepts discussed. Additionally, offering resource materials or suggested tools for further exploration could support continued learning and spark interest in applying the knowledge to personal or professional projects."
     },
     gallery: [],
+    coverImage: "/webinars/smartte.jpg",
     featured: false
   },
   {
@@ -389,6 +403,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "Adding guided labs or hands-on simulations could further enhance learning by allowing students to experience real attack and defense scenarios in a controlled environment. This would help bridge the gap between theory and practice while keeping learners more engaged."
     },
     gallery: [],
+    coverImage: "/webinars/cybsec1.jpg",
     featured: false
   },
   {
@@ -410,6 +425,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "Including more real-world deployment scenarios—such as multi-container setups or basic Docker Compose usage—could further strengthen the course. These additions would help learners better understand how Docker is applied in larger, production-level systems."
     },
     gallery: [],
+    coverImage: "/webinars/docker.jpg",
     featured: false
   },
   {
@@ -431,6 +447,7 @@ export const blogPosts: BlogPost[] = [
       suggestions: "For future sessions, incorporating a short live demonstration or step-by-step walkthrough of an actual database migration to Azure would further enhance understanding. Providing supplementary resources or reference materials after the webinar could also help participants deepen their knowledge and apply the concepts discussed more effectively."
     },
     gallery: [],
+    coverImage: "/webinars/webinar5.jpg",
     featured: false
   },
 ];

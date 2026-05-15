@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
+import { CoverImage } from "@/components/cover-image";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -68,10 +69,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       </div>
 
       {post.coverImage && (
-        <div className="w-full aspect-video md:h-[400px] relative rounded-xl overflow-hidden border border-border">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={post.coverImage} alt={post.title} className="w-full h-full object-cover" />
-        </div>
+        <CoverImage src={post.coverImage} alt={post.title} />
       )}
 
       <div className="prose prose-neutral dark:prose-invert max-w-none">
