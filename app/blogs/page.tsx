@@ -17,7 +17,13 @@ export default function BlogsPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogPosts.map((post) => (
-          <Card key={post.id} className="flex flex-col h-full border-border hover:border-primary/50 transition-all duration-300">
+          <Card key={post.id} className="flex flex-col h-full border-border hover:border-primary/50 transition-all duration-300 overflow-hidden">
+            {post.coverImage && (
+              <div className="relative w-full h-48 border-b border-border bg-muted/30">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={post.coverImage} alt={post.title} className="absolute inset-0 w-full h-full object-cover" />
+              </div>
+            )}
             <CardHeader className="space-y-4 flex-grow">
               <div className="flex items-center justify-between">
                 <Badge variant="outline" className="border-primary/50 text-primary">

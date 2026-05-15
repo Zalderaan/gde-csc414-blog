@@ -43,31 +43,36 @@ export default async function BlogPostPage({ params }: PageProps) {
           </h1>
 
           {(post.venue || post.role) && (
-            <div className="flex flex-row items-center justify-between bg-background/50">
-              <div className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted-foreground border-y border-border py-4">
-                {post.venue && (
-                  <div className="flex flex-col">
-                    <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">Location</span>
-                    <span>{post.venue}</span>
-                  </div>
-                )}
-                {post.role && (
-                  <div className="flex flex-col">
-                    <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">My Role</span>
-                    <span>{post.role}</span>
-                  </div>
-                )}
-                {post.organizers && post.organizers.length > 0 && (
-                  <div className="flex flex-col">
-                    <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">Organized By</span>
-                    <span>{post.organizers.join(", ")}</span>
-                  </div>
-                )}
-              </div>
+            <div className="flex flex-wrap w-full bg-background/50 gap-x-8 gap-y-2 text-sm text-muted-foreground border-y border-border py-4">
+              {post.venue && (
+                <div className="flex flex-col">
+                  <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">Location</span>
+                  <span>{post.venue}</span>
+                </div>
+              )}
+              {post.role && (
+                <div className="flex flex-col">
+                  <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">My Role</span>
+                  <span>{post.role}</span>
+                </div>
+              )}
+              {post.organizers && post.organizers.length > 0 && (
+                <div className="flex flex-col">
+                  <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">Organized By</span>
+                  <span>{post.organizers.join(", ")}</span>
+                </div>
+              )}
             </div>
           )}
         </div>
       </div>
+
+      {post.coverImage && (
+        <div className="w-full aspect-video md:h-[400px] relative rounded-xl overflow-hidden border border-border">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={post.coverImage} alt={post.title} className="w-full h-full object-cover" />
+        </div>
+      )}
 
       <div className="prose prose-neutral dark:prose-invert max-w-none">
         <p className="text-xl text-muted-foreground leading-relaxed italic border-l-4 border-primary pl-6 py-2 bg-muted/30">
