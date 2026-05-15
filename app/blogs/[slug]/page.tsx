@@ -41,27 +41,29 @@ export default async function BlogPostPage({ params }: PageProps) {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
             {post.title}
           </h1>
-          
+
           {(post.venue || post.role) && (
-            <div className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted-foreground border-y border-border py-4">
-              {post.venue && (
-                <div className="flex flex-col">
-                  <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">Location</span>
-                  <span>{post.venue}</span>
-                </div>
-              )}
-              {post.role && (
-                <div className="flex flex-col">
-                  <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">My Role</span>
-                  <span>{post.role}</span>
-                </div>
-              )}
-              {post.organizers && post.organizers.length > 0 && (
-                <div className="flex flex-col">
-                  <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">Organized By</span>
-                  <span>{post.organizers.join(", ")}</span>
-                </div>
-              )}
+            <div className="flex flex-row items-center justify-between bg-background/50">
+              <div className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted-foreground border-y border-border py-4">
+                {post.venue && (
+                  <div className="flex flex-col">
+                    <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">Location</span>
+                    <span>{post.venue}</span>
+                  </div>
+                )}
+                {post.role && (
+                  <div className="flex flex-col">
+                    <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">My Role</span>
+                    <span>{post.role}</span>
+                  </div>
+                )}
+                {post.organizers && post.organizers.length > 0 && (
+                  <div className="flex flex-col">
+                    <span className="font-semibold text-foreground uppercase tracking-wider text-[10px]">Organized By</span>
+                    <span>{post.organizers.join(", ")}</span>
+                  </div>
+                )}
+              </div>
             </div>
           )}
         </div>

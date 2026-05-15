@@ -21,7 +21,7 @@ export default function Home() {
             <span className="text-primary">Educational Trips</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-            A curated compilation of academic seminars and field trips documented as part of my computer science coursework. Exploring the intersection of theory and industry practice.
+            A curated compilation of academic seminars and field trips documented by <span className="text-foreground font-medium">Godfrey Eclarinal</span> (BSCS 4A) as part of the <span className="text-foreground font-medium">CSC414</span> coursework.
           </p>
         </div>
         <div className="flex gap-4">
@@ -50,8 +50,8 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {featuredPosts.map((post) => (
-            <Card key={post.id} className="group overflow-hidden border-border hover:border-primary/50 transition-all duration-300">
-              <CardHeader className="space-y-4">
+            <Card key={post.id} className="group overflow-hidden border-border hover:border-primary/50 transition-all duration-300 flex flex-col h-full">
+              <CardHeader className="space-y-4 flex-1">
                 <div className="flex items-center justify-between">
                   <Badge variant="outline">{post.type}</Badge>
                   <span className="text-xs text-muted-foreground">{post.date}</span>

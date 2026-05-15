@@ -17,7 +17,7 @@ export default function BlogsPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogPosts.map((post) => (
-          <Card key={post.id} className="flex flex-col border-border hover:border-primary/50 transition-all duration-300">
+          <Card key={post.id} className="flex flex-col h-full border-border hover:border-primary/50 transition-all duration-300">
             <CardHeader className="space-y-4 flex-grow">
               <div className="flex items-center justify-between">
                 <Badge variant="outline" className="border-primary/50 text-primary">
@@ -32,8 +32,8 @@ export default function BlogsPage() {
                 {post.excerpt}
               </CardDescription>
             </CardHeader>
-            <CardFooter className="pt-0">
-              <Button variant="outline" asChild className="w-full hover:bg-primary hover:text-primary-foreground border-border hover:border-primary">
+            <CardFooter className="">
+              <Button variant="default" asChild className=" w-full text-primary-foreground hover:text-background hover:bg-primary border-border hover:border-primary">
                 <Link href={`/blogs/${post.slug}`} className="gap-2">
                   View Full Report <ArrowRight className="w-4 h-4" />
                 </Link>
